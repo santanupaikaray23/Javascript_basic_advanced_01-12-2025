@@ -230,3 +230,64 @@ VM1127:5 n
 VM1127:5 j
 VM1127:5 o
 VM1127:5 y
+
+for(i=0;i<5;i++){
+    console.log(`i>>>${i}`)
+    for(j=0;j<5;j++){
+        console.log(`j>>>${j}`)
+    }
+}
+
+// while
+var i=5
+while(i<5){
+    console.log(i)
+    i++
+}
+
+// do while
+
+var i = 5
+do{
+    console.log(i)
+    i++
+}
+while(i<5)
+
+// for of
+
+var city = ["London","Delhi","NewYork","Paris"]
+
+for(mycity of city){
+    console.log(mycity)
+}
+
+var city = ["Puri","Cuttack",["Bmw","Audi","Skoda"],"London","Mumbai"]
+for(mycity of city){
+    if(Array.isArray(mycity)){
+        for(cars of mycity){
+            console.log(cars)
+        }
+    }else{
+        console.log(mycity)
+    }
+}
+
+var city = ["London", "Delhi", "NewYork", "Paris"]
+for(i=0;i<city.length;i++){
+    console.log(city[i])
+}
+
+function add(...args){
+    console.log()
+}
+
+function add(...args){
+    let sum = 0
+    for(data of args){
+        sum = data+sum
+    }
+    return sum
+}
+
+add(1,3,4,5,6)
