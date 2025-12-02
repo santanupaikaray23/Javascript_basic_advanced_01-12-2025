@@ -55,3 +55,8 @@ city
 var a = ['a', 'b','c',"hii"]
 var b =[1,2,3,4]
 a+b
+
+var a = "hii"
+var b = ['Hello']
+
+var myarray = ['Mumbai', 'Delhi', ['Red', 'Green', ['Bmw', 'Audi', 'Skoda'], 'Orange', 'yellow'], 'Bangalore', 'Chennai']
